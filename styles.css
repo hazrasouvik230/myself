@@ -320,6 +320,16 @@ section {
   margin: 0.2rem 0;
 }
 
+.experience p a {
+  color: #007bff; 
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+.experience p a:hover {
+  text-decoration: underline;
+}
+
 .company-logo {
   width: 48px;
   height: 40px;
@@ -370,7 +380,7 @@ section {
 }
 
 .pool-name:hover {
-  color: #ff8a00;
+  text-decoration: underline;
 }
 
 .pool-logo {
@@ -394,9 +404,9 @@ section {
 
 /* Project Section */
 .projects-header {
-    text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -416,13 +426,24 @@ section {
 
 /* Conatct */
 .contact-header {
-    text-align: center;
-    font-size: 3.5rem;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 3.5rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
 }
 
 #contact p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#contact p span {
+  color: #007bff;
+}
+
+#contact p span:hover {
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -573,6 +594,10 @@ a:hover {
 
     .experience p, .activity p, #contact p {
       font-size: 0.8rem;
+    }
+
+    #contact p {
+      text-align: center;
     }
 }
 
